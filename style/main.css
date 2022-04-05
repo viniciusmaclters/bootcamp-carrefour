@@ -9,22 +9,32 @@
   box-sizing: border-box; 
 }
 
+/* ELEMENTOS BASE DO CÓDIGO */
+
 body {
   background: var(--black);
   font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 header .logo {
   color: var(--red);
-  font-family: 'Arial Black';
+  font-family: 'Bebas Neue', cursive;
   font-size: 40px;
-  padding: 20px;
+  margin-left: 20px;
 }
 
 header nav a {
   text-decoration: none;
   color: #aaa;
-  margin-right: 10px;
+  margin-right: 20px;
 
 }
 
@@ -33,3 +43,47 @@ header nav a:hover {
   transition: 250ms;
 }
 
+/* FILME PRINCIPAL */
+
+.main-movie {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url(../img/house-of-cards.jpg);
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-movie .description {
+  margin: 10px 0 40px 0;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, .50);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+
+  transition: 250ms ease all;
+}
