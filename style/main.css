@@ -28,7 +28,6 @@ header .logo {
   color: var(--red);
   font-family: 'Bebas Neue', cursive;
   font-size: 40px;
-  margin-left: 20px;
 }
 
 header nav a {
@@ -56,7 +55,14 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
 
+.main-movie .container {
+  width: 70%;
+}
+
+.container {
+  margin-left: 30px;
 }
 
 .title {
@@ -79,6 +85,8 @@ header nav a:hover {
   cursor: pointer;
   margin-right: 15px;
   font-size: 14px;
+
+  margin-left: 30px;
 }
 
 .button:hover {
@@ -86,4 +94,16 @@ header nav a:hover {
   color: black;
 
   transition: 250ms ease all;
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+/* CAROUSEL MOVIE */
+
+.film-box {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
